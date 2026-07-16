@@ -1,0 +1,134 @@
+.landing {
+  background: var(--color-bg-secondary);
+  min-height: 100vh;
+}
+
+.landing-hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 40px 60px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.landing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 24px;
+}
+
+.landing-title {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.landing-title-accent {
+  color: var(--color-primary);
+}
+
+.landing-subtitle {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  max-width: 560px;
+}
+
+.landing-cta {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.landing-cta .btn {
+  padding: 14px 24px;
+  font-size: 16px;
+}
+
+.landing-trust {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.landing-avatars {
+  display: flex;
+}
+
+.landing-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  margin-left: -10px;
+}
+
+.landing-avatar:first-child {
+  margin-left: 0;
+}
+
+.landing-hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .landing-hero {
+    grid-template-columns: 1fr;
+    padding: 48px 24px;
+  }
+
+  .landing-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-hero {
+    padding: 32px 16px;
+    gap: 36px;
+  }
+
+  .landing-title {
+    font-size: 32px;
+  }
+
+  .landing-subtitle {
+    font-size: 16px;
+  }
+
+  .landing-cta {
+    flex-direction: column;
+  }
+
+  .landing-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .landing-trust {
+    flex-wrap: wrap;
+  }
+}

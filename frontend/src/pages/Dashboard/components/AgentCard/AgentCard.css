@@ -1,0 +1,125 @@
+.agent-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+}
+
+.agent-card-active {
+  border-color: var(--color-primary);
+}
+
+.agent-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.agent-status-dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.agent-status-dot.on {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.agent-status-dot.off {
+  background: #f1f5f9;
+  color: var(--color-text-muted);
+}
+
+.agent-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.agent-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.agent-meta-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-text-muted);
+}
+
+.agent-delivery {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.agent-stats {
+  display: flex;
+  gap: 32px;
+  margin: 16px 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+.agent-stat-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.agent-stat-label {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.agent-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.agent-actions button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: #fff;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.agent-actions button:hover {
+  background: var(--color-bg-secondary);
+}
+
+.agent-action-primary {
+  background: var(--color-success-bg) !important;
+  color: var(--color-success) !important;
+  border-color: transparent !important;
+}
+
+.agent-action-danger:hover {
+  background: var(--color-danger-bg) !important;
+  color: var(--color-danger) !important;
+}

@@ -174,3 +174,4 @@ Actions**, and a footer reading *"Generated automatically by FintechOps AI Agent
 Light theme only, desktop-first, rounded cards, soft shadows — see
 `frontend/src/index.css` for the full token set.
 # fintech-app-ai
+# fintech-app-ai

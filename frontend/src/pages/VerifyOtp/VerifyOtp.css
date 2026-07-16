@@ -1,0 +1,36 @@
+.otp-input input {
+  letter-spacing: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.otp-info {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+}
+
+.otp-resend {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.otp-resend:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 360px) {
+  .otp-input input {
+    letter-spacing: 5px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "fintechops-schedule-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lambda 1 — Agents CRUD API + EventBridge Scheduler management for FintechOps Always-On Agents.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "package": "npm run build && cp package.json dist/ && cd dist && npm install --omit=dev --no-audit --no-fund && zip -r ../schedule-api.zip . -x '*.ts'"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.699.0",
+    "@aws-sdk/client-dynamodb": "^3.699.0",
+    "@aws-sdk/client-scheduler": "^3.699.0",
+    "@aws-sdk/client-ses": "^3.699.0",
+    "@aws-sdk/lib-dynamodb": "^3.699.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.146",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}

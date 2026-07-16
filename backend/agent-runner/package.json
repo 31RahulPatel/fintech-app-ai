@@ -1,0 +1,21 @@
+{
+  "name": "fintechops-agent-runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lambda 2 — Triggered by EventBridge Scheduler. Fetches market data, calls Bedrock Nova, emails the report via SES.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "package": "npm run build && cp package.json dist/ && cd dist && npm install --omit=dev --no-audit --no-fund && zip -r ../agent-runner.zip . -x '*.ts'"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.699.0",
+    "@aws-sdk/client-dynamodb": "^3.699.0",
+    "@aws-sdk/client-ses": "^3.699.0",
+    "@aws-sdk/lib-dynamodb": "^3.699.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
