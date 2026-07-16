@@ -175,3 +175,4 @@ Light theme only, desktop-first, rounded cards, soft shadows — see
 `frontend/src/index.css` for the full token set.
 # fintech-app-ai
 # fintech-app-ai
+# fintech-app-ai
